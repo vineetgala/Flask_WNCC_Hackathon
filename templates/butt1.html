@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>HOME</title>
+</head>
+<body>
+Following is a 2 player tic tac toe game:<br><br>
+<input onclick="change1()" type="button" value="  " id="myButton1"></input>
+<input onclick="change2()" type="button" value="  " id="myButton2"></input>
+<input onclick="change3()" type="button" value="  " id="myButton3"></input><br>
+<input onclick="change4()" type="button" value="  " id="myButton4"></input>
+<input onclick="change5()" type="button" value="  " id="myButton5"></input>
+<input onclick="change6()" type="button" value="  " id="myButton6"></input><br>
+<input onclick="change7()" type="button" value="  " id="myButton7"></input>
+<input onclick="change8()" type="button" value="  " id="myButton8"></input>
+<input onclick="change9()" type="button" value="  " id="myButton9"></input>
+
+<script>
+a=0;
+var x=[0,0,0,0,0,0,0,0,0];
+function change1()
+{
+	if(a%2==0&&document.getElementById("myButton1").value=="  ")
+	{document.getElementById("myButton1").value="X";a++;x[0]=1;}
+	else if(document.getElementById("myButton1").value=="  ")
+	{document.getElementById("myButton1").value="O";a++;x[0]=2;}
+check();}
+function change2()
+{
+	if(a%2==0&&document.getElementById("myButton2").value=="  ")
+	{document.getElementById("myButton2").value="X";a++;x[1]=1;}
+	else if(document.getElementById("myButton2").value=="  ")
+	{document.getElementById("myButton2").value="O";a++;x[1]=2;}
+check();}function change3()
+{
+	if(a%2==0&&document.getElementById("myButton3").value=="  ")
+	{document.getElementById("myButton3").value="X";a++;x[2]=1;}
+	else if(document.getElementById("myButton3").value=="  ")
+	{document.getElementById("myButton3").value="O";a++;x[2]=2;}
+check();}function change4()
+{
+	if(a%2==0&&document.getElementById("myButton4").value=="  ")
+	{document.getElementById("myButton4").value="X";a++;x[3]=1;}
+	else if(document.getElementById("myButton4").value=="  ")
+	{document.getElementById("myButton4").value="O";a++;x[3]=2;}
+check();}function change5()
+{
+	if(a%2==0&&document.getElementById("myButton5").value=="  ")
+	{document.getElementById("myButton5").value="X";a++;x[4]=1;}
+	else if(document.getElementById("myButton5").value=="  ")
+	{document.getElementById("myButton5").value="O";a++;x[4]=2;}
+check();}function change6()
+{
+	if(a%2==0&&document.getElementById("myButton6").value=="  ")
+	{document.getElementById("myButton6").value="X";a++;x[5]=1;}
+	else if(document.getElementById("myButton6").value=="  ")
+	{document.getElementById("myButton6").value="O";a++;x[5]=2;}
+check();}function change7()
+{
+	if(a%2==0&&document.getElementById("myButton7").value=="  ")
+	{document.getElementById("myButton7").value="X";a++;x[6]=1;}
+	else if(document.getElementById("myButton7").value=="  ")
+	{document.getElementById("myButton7").value="O";a++;x[6]=2;}
+check();}function change8()
+{
+	if(a%2==0&&document.getElementById("myButton8").value=="  ")
+	{document.getElementById("myButton8").value="X";a++;x[7]=1;}
+	else if(document.getElementById("myButton8").value=="  ")
+	{document.getElementById("myButton8").value="O";a++;x[7]=2;}
+check();}function change9()
+{
+	if(a%2==0&&document.getElementById("myButton9").value=="  ")
+	{document.getElementById("myButton9").value="X";a++;x[8]=1;}
+	else if(document.getElementById("myButton9").value=="  ")
+	{document.getElementById("myButton9").value="O";a++;x[8]=2;}
+check();}
+function check()
+{for(var i=1;i<=2;i++)
+{
+	if(x[1]==x[2]&&x[1]==x[3]&&x[1]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+	else if(x[4]==x[5]&&x[5]==x[6]&&x[4]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+	else if(x[7]==x[9]&&x[7]==x[8]&&x[7]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+	else if(x[1]==x[4]&&x[1]==x[7]&&x[1]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+	else if(x[2]==x[5]&&x[5]==x[8]&&x[2]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+	else if(x[3]==x[6]&&x[9]==x[6]&&x[3]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+	else if(x[1]==x[5]&&x[1]==x[9]&&x[1]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+	else if(x[3]==x[5]&&x[5]==x[7]&&x[3]==i)
+	{if(i==1)	document.write("X wins");
+		else
+			document.write("O wins");}
+}
+}
+</script>
+</body>
+</html>
